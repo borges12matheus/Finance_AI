@@ -1,0 +1,29 @@
+analysis_task:
+  description: >
+    Examinar o texto extraido da planilha ou PDF fornecido no diretório {filepath}, 
+    classificando os tipos de despesas, identificando padrões de gastos 
+    e categorizando as principais fontes de receita.
+  expected_output: >
+    Um relatório detalhado sobre os hábitos financeiros da família, 
+    destacando áreas de maior gasto 
+    e possíveis oportunidades de economia.
+  agent: finance_analyst
+
+context_task:
+  description: >
+    Comparar os padrões de consumo da família com tendências econômicas atuais, 
+    como inflação, taxa de juros e preços de mercado.
+  expected_output: >
+    Um resumo explicando como as condições econômicas 
+    podem estar impactando as finanças da família e recomendações para adaptação.
+  agent: trend_researcher
+
+plann_task:
+  description: >
+    Criar um plano de ação detalhado com sugestões para reduzir gastos desnecessários, 
+    otimizar investimentos e criar uma reserva de emergência.
+  expected_output: >
+    Um guia prático e personalizado para a família, 
+    incluindo recomendações para economizar dinheiro, 
+    melhorar o orçamento e potencialmente investir melhor.
+  agent: planning_consultant

@@ -1,0 +1,26 @@
+[project]
+name = "finance_ai_control"
+version = "0.1.0"
+description = "finance_ai_control using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+    "docling>=2.25.2",
+    "litellm>=1.60.2",
+    "pdfplumber>=0.11.5",
+]
+
+[project.scripts]
+finance_ai_control = "finance_ai_control.main:run"
+run_crew = "finance_ai_control.main:run"
+train = "finance_ai_control.main:train"
+replay = "finance_ai_control.main:replay"
+test = "finance_ai_control.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
