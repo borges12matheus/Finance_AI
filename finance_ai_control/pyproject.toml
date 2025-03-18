@@ -8,7 +8,11 @@ dependencies = [
     "crewai[tools]>=0.102.0,<1.0.0",
     "docling>=2.25.2",
     "litellm>=1.60.2",
+    "pdf2image>=1.17.0",
     "pdfplumber>=0.11.5",
+    "poppler-utils>=0.1.0",
+    "pypandoc>=1.15",
+    "pytesseract>=0.3.13",
 ]
 
 [project.scripts]
